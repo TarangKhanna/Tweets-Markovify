@@ -22,12 +22,12 @@ def markovify_text(string_path):
 
 	print '\nPossible sentences for user:\n'
 	# random sentences
-	for i in range(20):
+	for i in range(30):
 	    print(text_model.make_sentence())
 
 	print '\nPossible Tweets for user:\n'
 	# something that he could tweet
-	for i in range(20):
+	for i in range(30):
 	    print(text_model.make_short_sentence(140))
 
 # return path of stored tweets
@@ -78,7 +78,8 @@ def get_all_tweets(screen_name):
 	
 	return file_name
 
-
+# use get_all_tweets with user name to get a csv of tweets
+# then call markovify_text to generate new texts
 if __name__ == '__main__':
 	#pass in the username of the account you want to download
 	# string_path = get_all_tweets("elonmusk")
