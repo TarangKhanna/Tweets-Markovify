@@ -24,11 +24,13 @@ def markovify_text(string_path):
 	# random sentences
 	for i in range(30):
 	    print(text_model.make_sentence())
+	    print '\n'
 
 	print '\nPossible Tweets for user:\n'
 	# something that he could tweet
 	for i in range(30):
 	    print(text_model.make_short_sentence(140))
+	    print '\n'
 
 # return path of stored tweets
 def get_all_tweets(screen_name):
